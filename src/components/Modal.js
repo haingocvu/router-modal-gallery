@@ -10,7 +10,7 @@ function Modal() {
   if (!image) return null;
   const back = (e) => {
     e.stopPropagation();
-    history.back();
+    history.goBack();
   };
   return (
     <div
@@ -25,7 +25,6 @@ function Modal() {
       }}
     >
       <div
-        className="modal"
         style={{
           position: "absolute",
           background: "#fff",
